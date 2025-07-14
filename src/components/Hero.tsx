@@ -51,8 +51,8 @@ const Hero: React.FC = () => {
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-gray-100 mb-10 max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-            Get emergency welding support, heavy plant fabrication, and onsite repairs – 
-            delivered by industry pros with <span className="text-orange-400 font-bold">30+ years' experience</span>
+            Get emergency welding support.<br />
+            Mobile welding plant repairs and light to medium steel welding and fabrication.
           </p>
 
           {/* CTAs */}

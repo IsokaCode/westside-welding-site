@@ -9,10 +9,9 @@ const Contact: React.FC = () => {
 
   const certifications = [
     'ASME XI Certified',
-    'CSCS Card Holders',
-    'IPAF Certified',
-    'PASMA Qualified',
-    'Fully Insured (£2M)',
+    'Certified coded welder CSCS',
+    'MEWP Ipaf trained',
+    'Fully Insured (£6M)',
     'Health & Safety Compliant'
   ];
 
@@ -139,7 +138,7 @@ const Contact: React.FC = () => {
               
               <div className="mt-6 p-4 bg-gray-800/50 border border-green-500/30 rounded-lg">
                 <p className="text-green-400 text-sm text-center">
-                  All certifications are current and regularly updated. Insurance coverage: £2M Public Liability
+                  All certifications are current and regularly updated. Insurance coverage: £6M Public Liability
                 </p>
               </div>
             </div>

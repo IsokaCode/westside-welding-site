@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Menu, X, Zap } from 'lucide-react';
+import { Phone, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import WestsideLogo from '../assets/westside_welding_logo.png';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,15 +20,14 @@ const Header: React.FC = () => {
       isScrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-2xl border-b border-blue-500/30' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center border border-blue-400/30">
-              <Zap className="w-6 h-6 text-yellow-400" />
-            </div>
-            <div>
-              <h1 className="font-bold text-lg text-white">Westside Welding</h1>
-              <p className="text-orange-400 text-xs font-semibold">& Engineering Ltd</p>
-            </div>
+        <div className="flex items-center justify-between" style={{ minHeight: '90px' }}>
+          <Link to="/" className="flex items-center" style={{ height: '90px' }}>
+            <img 
+              src={WestsideLogo} 
+              alt="Westside Welding Logo" 
+              className="object-contain"
+              style={{ height: '140px', maxHeight: '140px', width: 'auto', display: 'block' }}
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -52,6 +52,16 @@ const Header: React.FC = () => {
               <span>Book Now</span>
             </Link>
           </nav>
+
+          {/* Add vertical centering for nav links */}
+          <style>{`
+            @media (min-width: 768px) {
+              header nav {
+                align-items: center !important;
+                height: 100%;
+              }
+            }
+          `}</style>
 
           {/* Mobile Menu Button */}
           <button 
