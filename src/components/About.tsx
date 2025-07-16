@@ -20,7 +20,7 @@ const features = [
   },
   {
     icon: Award,
-    title: 'Certified welders — CSCS, IPAF, PASMA',
+    title: 'Certified welders — CSCS, IPAF',
     description: 'All our welders hold current industry certifications and undergo regular skills assessments'
   },
   {

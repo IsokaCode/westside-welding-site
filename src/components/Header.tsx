@@ -26,7 +26,7 @@ const Header: React.FC = () => {
               src={WestsideLogo} 
               alt="Westside Welding Logo" 
               className="object-contain"
-              style={{ height: '140px', maxHeight: '140px', width: 'auto', display: 'block' }}
+              style={{ height: '280px', maxHeight: '280px', width: 'auto', display: 'block' }}
             />
           </Link>
 

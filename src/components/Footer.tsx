@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2 flex flex-col items-start">
-            <img src={WestsideLogo} alt="Westside Welding Logo" className="object-contain mb-4" style={{ height: '280px', maxHeight: '280px', width: 'auto', display: 'block' }} />
+            <img src={WestsideLogo} alt="Westside Welding Logo" className="object-contain mb-4" style={{ height: '560px', maxHeight: '560px', width: 'auto', display: 'block' }} />
             <p className="text-gray-400 mb-6 leading-relaxed">
               Professional mobile welding and fabrication services across Hertfordshire, London, and surrounding areas. 
               With over 30 years of experience, we provide 24/7 emergency response for construction, industrial, and plant equipment repairs.
@@ -47,6 +47,12 @@ const Footer: React.FC = () => {
                 <Phone className="w-4 h-4 text-orange-400" />
                 <a href="tel:+441707332872" className="text-gray-400 hover:text-orange-400 transition-colors">
                   01707 332872
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Phone className="w-4 h-4 text-orange-400" />
+                <a href="tel:+447799123456" className="text-gray-400 hover:text-orange-400 transition-colors">
+                  07799 123456
                 </a>
               </div>
               <div className="flex items-center space-x-2">
