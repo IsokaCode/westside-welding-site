@@ -54,7 +54,7 @@ const QuoteForm: React.FC = () => {
                 We'll review your requirements and get back to you within 15 minutes during business hours.
               </p>
               <p className="text-orange-400 font-semibold">
-                For emergency requests, call us directly at <a href="tel:+441234567890" className="underline hover:text-orange-300">01234 567890</a>
+                For emergency requests, call us directly at <a href="tel:07836648694" className="underline hover:text-orange-300">07836 648694</a>
               </p>
             </div>
           </div>
@@ -87,11 +87,11 @@ const QuoteForm: React.FC = () => {
                 </h3>
                 <p className="text-gray-300 mb-4">For urgent repairs and breakdowns</p>
                 <a 
-                  href="tel:+441234567890"
+                  href="tel:07836648694"
                   className="w-full bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600 text-white py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 border border-orange-500/30"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>Call: 01234 567890</span>
+                  <span>Call: 07836 648694</span>
                 </a>
               </div>
 
@@ -99,7 +99,7 @@ const QuoteForm: React.FC = () => {
                 <h3 className="text-xl font-bold text-white mb-4">WhatsApp Quote</h3>
                 <p className="text-gray-300 mb-4">Send photos and get instant estimate</p>
                 <a 
-                  href="https://wa.me/441234567890"
+                  href="https://wa.me/447836648694"
                   className="w-full bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 border border-green-500/30"
                 >
                   <MessageCircle className="w-4 h-4" />
@@ -150,7 +150,7 @@ const QuoteForm: React.FC = () => {
                       value={formData.phone}
                       onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
                       className="w-full bg-gray-700/50 border border-gray-600/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-colors"
-                      placeholder="01234 567890"
+                      placeholder="07836 648694"
                     />
                   </div>
 
