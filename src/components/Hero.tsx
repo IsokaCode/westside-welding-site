@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
             <a 
-              href="tel:+441234567890" 
+              href="tel:07799123456" 
               className="bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600 text-white px-10 py-5 rounded-xl font-bold text-xl flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-orange-500/40 border border-orange-400/50 backdrop-blur-sm"
             >
               <Phone className="w-6 h-6" />

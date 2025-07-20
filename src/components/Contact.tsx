@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold text-lg">Phone</h4>
-                    <a href="tel:07836648694" className="text-orange-400 hover:text-orange-300 text-lg font-bold block">07836 648694</a>
+                    <a href="tel:07799123456" className="text-orange-400 hover:text-orange-300 text-lg font-bold block">07799 123456</a>
                     <a href="tel:01707332872" className="text-orange-400 hover:text-orange-300 text-lg font-bold block">01707 332872</a>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ const Contact: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:07836648694"
+                href="tel:07799123456"
                 className="bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 border border-orange-500/30"
               >
                 <Phone className="w-5 h-5" />
