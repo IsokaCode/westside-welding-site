@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="text-white font-semibold text-lg">Phone</h4>
                     <a href="tel:01707332872" className="text-orange-400 hover:text-orange-300 text-lg font-bold block">01707 332 872</a>
-                    <a href="tel:07836648694" className="text-orange-400 hover:text-orange-300 text-lg font-bold block">07836 648694</a>
+                    <a href="tel:07836648694" className="text-orange-400 hover:text-orange-300 text-lg font-bold block">07836 648 694</a>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
