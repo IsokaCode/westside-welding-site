@@ -54,7 +54,7 @@ const QuoteForm: React.FC = () => {
                 We'll review your requirements and get back to you within 15 minutes during business hours.
               </p>
               <p className="text-orange-400 font-semibold">
-                For emergency requests, call us directly at <a href="tel:01707332872" className="underline hover:text-orange-300">01707 332 872</a>
+                For emergency requests, call us directly at <a href="tel:07836648694" className="underline hover:text-orange-300">07836 648 694</a>
               </p>
             </div>
           </div>
@@ -87,11 +87,11 @@ const QuoteForm: React.FC = () => {
                 </h3>
                 <p className="text-gray-300 mb-4">For urgent repairs and breakdowns</p>
                 <a 
-                  href="tel:01707332872"
+                  href="tel:07836648694"
                   className="w-full bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600 text-white py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 border border-orange-500/30"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>Call: 01707 332 872</span>
+                  <span>Call: 07836 648 694</span>
                 </a>
               </div>
 
