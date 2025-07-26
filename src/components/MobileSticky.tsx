@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageCircle, FileText, X, Zap } from 'lucide-react';
+import { Phone, MessageCircle, X, Zap } from 'lucide-react';
 
 const MobileSticky: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,7 +23,7 @@ const MobileSticky: React.FC = () => {
       <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-gray-900/95 backdrop-blur-sm border-t border-gray-700/50 p-4 shadow-2xl">
         <div className="flex items-center justify-around">
           <a 
-            href="tel:+441234567890"
+            href="tel:07836648694"
             className="flex flex-col items-center space-y-1 text-orange-400 hover:text-orange-300 transition-colors"
           >
             <div className="bg-gradient-to-br from-orange-600 to-orange-700 p-3 rounded-full border border-orange-500/30">
@@ -33,7 +33,7 @@ const MobileSticky: React.FC = () => {
           </a>
 
           <a 
-            href="https://wa.me/441234567890"
+            href="https://wa.me/447836648694"
             className="flex flex-col items-center space-y-1 text-green-400 hover:text-green-300 transition-colors"
           >
             <div className="bg-gradient-to-br from-green-600 to-green-700 p-3 rounded-full border border-green-500/30">
@@ -41,16 +41,6 @@ const MobileSticky: React.FC = () => {
             </div>
             <span className="text-xs font-semibold">WhatsApp</span>
           </a>
-
-          <button 
-            onClick={() => document.getElementById('quote')?.scrollIntoView({ behavior: 'smooth' })}
-            className="flex flex-col items-center space-y-1 text-blue-400 hover:text-blue-300 transition-colors"
-          >
-            <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-3 rounded-full border border-blue-500/30">
-              <FileText className="w-5 h-5 text-white" />
-            </div>
-            <span className="text-xs font-semibold">Quote</span>
-          </button>
         </div>
       </div>
 
@@ -61,29 +51,19 @@ const MobileSticky: React.FC = () => {
             <div className="absolute bottom-16 right-0 bg-gray-900/95 backdrop-blur-sm border border-gray-700/50 rounded-xl p-4 shadow-2xl">
               <div className="space-y-3 min-w-[200px]">
                 <a 
-                  href="tel:+441234567890"
+                  href="tel:07836648694"
                   className="flex items-center space-x-3 text-orange-400 hover:text-orange-300 transition-colors p-2 hover:bg-gray-800/50 rounded-lg"
                 >
                   <Phone className="w-5 h-5" />
                   <span className="font-semibold">Emergency Call</span>
                 </a>
                 <a 
-                  href="https://wa.me/441234567890"
+                  href="https://wa.me/447836648694"
                   className="flex items-center space-x-3 text-green-400 hover:text-green-300 transition-colors p-2 hover:bg-gray-800/50 rounded-lg"
                 >
                   <MessageCircle className="w-5 h-5" />
                   <span className="font-semibold">WhatsApp</span>
                 </a>
-                <button 
-                  onClick={() => {
-                    document.getElementById('quote')?.scrollIntoView({ behavior: 'smooth' });
-                    setShowQuickActions(false);
-                  }}
-                  className="flex items-center space-x-3 text-blue-400 hover:text-blue-300 transition-colors p-2 hover:bg-gray-800/50 rounded-lg w-full text-left"
-                >
-                  <FileText className="w-5 h-5" />
-                  <span className="font-semibold">Get Quote</span>
-                </button>
               </div>
             </div>
           )}

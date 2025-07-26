@@ -10,6 +10,7 @@ import QuoteForm from './components/QuoteForm';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import MobileSticky from './components/MobileSticky';
+import ScrollToTop from './components/ScrollToTop';
 
 function Home() {
   return (
@@ -45,6 +46,7 @@ function ContactPage() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-white">
         <Header />
         <Routes>

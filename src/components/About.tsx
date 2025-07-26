@@ -80,7 +80,7 @@ const About: React.FC = () => {
               {[...logos, ...logos].map((logo, idx) => {
                 let height = 'h-16', minWidth = '120px', maxWidth = '160px';
                 if (logo === LiebherrLogo) {
-                  height = 'h-64'; minWidth = '480px'; maxWidth = '640px';
+                  height = 'h-32'; minWidth = '240px'; maxWidth = '320px';
                 } else if (logo === BenninghovenLogo) {
                   height = 'h-32'; minWidth = '240px'; maxWidth = '320px';
                 }
