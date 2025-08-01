@@ -11,7 +11,7 @@ const Services: React.FC = () => {
   };
 
   return (
-    <section id="services" className="py-20 bg-gray-800">
+    <section id="services" className="py-20 bg-gray-800 pt-32">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -78,7 +78,7 @@ const Services: React.FC = () => {
                     onClick={() => navigate(`/booking?service=${service.id}`)}
                   >
                     Get Quote
-                  </button>
+                </button>
                 )}
               </div>
             </div>

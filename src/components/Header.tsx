@@ -17,7 +17,7 @@ const Header: React.FC = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-2xl border-b border-blue-500/30' : 'bg-transparent'
+      isScrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-2xl border-b border-blue-500/30' : 'bg-gray-900/95 backdrop-blur-sm'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between" style={{ minHeight: '90px' }}>
@@ -52,16 +52,6 @@ const Header: React.FC = () => {
               <span>Book Now</span>
             </Link>
           </nav>
-
-          {/* Add vertical centering for nav links */}
-          <style>{`
-            @media (min-width: 768px) {
-              header nav {
-                align-items: center !important;
-                height: 100%;
-              }
-            }
-          `}</style>
 
           {/* Mobile Menu Button */}
           <button 

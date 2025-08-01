@@ -56,7 +56,7 @@ const QuoteForm: React.FC = () => {
 
   if (isSubmitted) {
     return (
-      <section id="quote" className="py-20 bg-gray-900">
+      <section id="quote" className="py-20 bg-gray-900 pt-32">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <div className="bg-gray-800/50 border border-green-500/50 rounded-2xl p-12 shadow-2xl">
@@ -77,7 +77,7 @@ const QuoteForm: React.FC = () => {
 
   return (
     <>
-      <section id="quote" className="py-20 bg-gray-900">
+      <section id="quote" className="py-20 bg-gray-900 pt-32">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">

@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
 
   return (
     <>
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32">
         {/* Welding Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -99,10 +99,15 @@ const Hero: React.FC = () => {
                   <Check className="w-6 h-6 drop-shadow-lg" />
                   <span className="font-bold drop-shadow-sm">Fully Insured</span>
                 </div>
-                <div className="flex items-center justify-center space-x-3 text-blue-400">
-                  <MessageCircle className="w-6 h-6 drop-shadow-lg" />
-                  <span className="font-bold drop-shadow-sm">5-Star Google Reviews</span>
-                </div>
+                              <a 
+                href="https://g.co/kgs/pkKvQVB" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center space-x-3 text-blue-400 hover:text-blue-300 transition-colors"
+              >
+                <MessageCircle className="w-6 h-6 drop-shadow-lg" />
+                <span className="font-bold drop-shadow-sm">5-Star Google Reviews</span>
+              </a>
                 <div className="flex items-center justify-center space-x-3 text-orange-400">
                   <MapPin className="w-6 h-6 drop-shadow-lg" />
                   <span className="font-bold drop-shadow-sm">Same-Day Callout</span>

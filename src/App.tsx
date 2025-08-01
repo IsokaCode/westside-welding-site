@@ -23,7 +23,7 @@ function Home() {
 
 function ContactPage() {
   return (
-    <section className="py-20 bg-gray-900 min-h-screen">
+    <section className="py-20 bg-gray-900 min-h-screen pt-32">
       <div className="container mx-auto px-4">
         <Contact />
         <div className="mt-12 flex justify-center">

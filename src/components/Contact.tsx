@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
 
   return (
     <>
-      <section id="contact" className="py-20 bg-gray-800">
+      <section id="contact" className="py-20 bg-gray-800 pt-32">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

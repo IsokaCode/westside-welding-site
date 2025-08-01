@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
     : projects.filter(p => p.category === selectedCategory);
 
   return (
-    <section id="projects" className="py-20 bg-gray-800">
+    <section id="projects" className="py-20 bg-gray-800 pt-32">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
