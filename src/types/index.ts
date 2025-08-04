@@ -25,6 +25,8 @@ export interface Project {
   image: string;
   beforeImage?: string;
   afterImage?: string;
+  cloudinaryId?: string; // New field for Cloudinary integration
+  uploadedAt?: string; // New field for Cloudinary upload date
 }
 
 export interface ClientLogo {

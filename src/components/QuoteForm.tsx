@@ -36,7 +36,7 @@ const QuoteForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
+    // Formspree will handle the submission automatically
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 3000);
   };
@@ -142,12 +142,18 @@ const QuoteForm: React.FC = () => {
 
               {/* Quote Form */}
               <div className="lg:col-span-2">
-                <form onSubmit={handleSubmit} className="bg-gray-800/50 border border-gray-700/50 rounded-xl p-8 shadow-2xl">
+                <form 
+                  action="https://formspree.io/f/xpzgwqkz" 
+                  method="POST"
+                  onSubmit={handleSubmit} 
+                  className="bg-gray-800/50 border border-gray-700/50 rounded-xl p-8 shadow-2xl"
+                >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
                       <label className="block text-white font-semibold mb-2">Full Name *</label>
                       <input
                         type="text"
+                        name="name"
                         required
                         value={formData.name}
                         onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
@@ -160,6 +166,7 @@ const QuoteForm: React.FC = () => {
                       <label className="block text-white font-semibold mb-2">Phone Number *</label>
                       <input
                         type="tel"
+                        name="phone"
                         required
                         value={formData.phone}
                         onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
@@ -172,6 +179,7 @@ const QuoteForm: React.FC = () => {
                       <label className="block text-white font-semibold mb-2">Email Address</label>
                       <input
                         type="email"
+                        name="email"
                         value={formData.email}
                         onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                         className="w-full bg-gray-700/50 border border-gray-600/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-colors"
@@ -182,6 +190,7 @@ const QuoteForm: React.FC = () => {
                     <div>
                       <label className="block text-white font-semibold mb-2">Service Type *</label>
                       <select
+                        name="serviceType"
                         required
                         value={formData.serviceType}
                         onChange={(e) => setFormData(prev => ({ ...prev, serviceType: e.target.value }))}
@@ -198,6 +207,7 @@ const QuoteForm: React.FC = () => {
                     <div>
                       <label className="block text-white font-semibold mb-2">Urgency Level *</label>
                       <select
+                        name="urgency"
                         required
                         value={formData.urgency}
                         onChange={(e) => setFormData(prev => ({ ...prev, urgency: e.target.value }))}
@@ -215,9 +225,10 @@ const QuoteForm: React.FC = () => {
                       <label className="block text-white font-semibold mb-2">Location</label>
                       <input
                         type="text"
+                        name="location"
                         value={formData.location}
                         onChange={(e) => setFormData(prev => ({ ...prev, location: e.target.value }))}
-                        className="w-full bg-gray-700/50 border border-gray-600/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-colors"
+                        className="w-full bg-gray-700/50 border border-gray-600/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-gray-400 focus:ring-2 focus:ring-blue-500/20 transition-colors"
                         placeholder="Site address or postcode"
                       />
                     </div>
@@ -226,6 +237,7 @@ const QuoteForm: React.FC = () => {
                   <div className="mb-6">
                     <label className="block text-white font-semibold mb-2">Project Description *</label>
                     <textarea
+                      name="description"
                       required
                       rows={4}
                       value={formData.description}
@@ -240,6 +252,7 @@ const QuoteForm: React.FC = () => {
                     <div className="border-2 border-dashed border-gray-600/50 rounded-lg p-6 text-center hover:border-blue-500/50 transition-colors">
                       <input
                         type="file"
+                        name="file"
                         accept="image/*"
                         onChange={handleFileChange}
                         className="hidden"

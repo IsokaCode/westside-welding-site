@@ -18,6 +18,35 @@ import IMG_1878 from '../assets/IMG_1878.JPG';
 import IMG_1930 from '../assets/IMG_1930.JPG';
 import IMG_2020 from '../assets/IMG_2020.JPG';
 
+import { CLOUDINARY_CONFIG, isCloudinaryConfigured, getFolderListingUrl, getCloudinaryUrl } from '../config/cloudinary';
+
+// Function to fetch images from Cloudinary
+export const fetchCloudinaryImages = async (): Promise<Project[]> => {
+  try {
+    const response = await fetch(getFolderListingUrl());
+    
+    if (!response.ok) {
+      throw new Error('Failed to fetch Cloudinary images');
+    }
+    
+    const data = await response.json();
+    
+    return data.resources.map((resource: any, index: number) => ({
+      id: `cloudinary-${index}`,
+      title: resource.public_id.split('/').pop()?.replace(/_/g, ' ') || `Project ${index + 1}`,
+      category: 'Welding & Fabrication',
+      location: 'Various Locations',
+      description: `Professional welding and fabrication work - ${resource.public_id.split('/').pop()?.replace(/_/g, ' ')}`,
+      image: getCloudinaryUrl(resource.public_id, CLOUDINARY_CONFIG.TRANSFORMATIONS.GALLERY),
+      cloudinaryId: resource.public_id,
+      uploadedAt: resource.created_at
+    }));
+  } catch (error) {
+    console.error('Error fetching Cloudinary images:', error);
+    return []; // Return empty array if Cloudinary fails, will fall back to local images
+  }
+};
+
 export const projects: Project[] = [
   {
     id: 'img-0410',
@@ -47,7 +76,7 @@ export const projects: Project[] = [
     id: 'img-0815',
     title: 'Steel Walls Replaced at Scrap Waste Site',
     category: 'Fabrication',
-    location: 'Unknown',
+    location: 'London',
     description: 'New steel walls replaced at scrap waste site.',
     image: IMG_0815
   },
@@ -55,7 +84,7 @@ export const projects: Project[] = [
     id: 'img-0933-0940',
     title: 'Structural Steelwork Modifications at Carpark',
     category: 'Structural Welding',
-    location: 'Unknown',
+    location: 'London',
     description: 'Modifications to structural steelwork at carpark.',
     image: IMG_0933,
     afterImage: IMG_0940
@@ -91,7 +120,7 @@ export const projects: Project[] = [
     id: 'img-1693',
     title: 'Concrete Mixer Drum Repairs',
     category: 'Repair',
-    location: 'Unknown',
+    location: 'London',
     description: 'Repairs to concrete mixer drum.',
     image: IMG_1693
   },
