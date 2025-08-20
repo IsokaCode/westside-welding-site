@@ -7,28 +7,28 @@ import FMConwayLogo from '../assets/fm_conway_logo.png';
 import BenninghovenLogo from '../assets/benninghoven_logo.png';
 import AggregateIndustriesLogo from '../assets/Aggregate_Industries_logo.png';
 
-const features = [
-  {
-    icon: Clock,
-    title: 'Over 30 years of expert mobile welding',
-    description: 'Three decades of industry experience serving construction and industrial clients across the region'
-  },
-  {
-    icon: Wrench,
-    title: 'Heavy machinery, structural, plant repairs',
-    description: 'Specialized in all types of welding from emergency repairs to complex fabrication projects'
-  },
-  {
-    icon: Award,
+  const features = [
+    {
+      icon: Clock,
+      title: 'Over 30 years of expert mobile welding',
+      description: 'Three decades of industry experience serving construction and industrial clients across the region'
+    },
+    {
+      icon: Wrench,
+      title: 'Heavy machinery, structural, plant repairs',
+      description: 'Specialized in all types of welding from emergency repairs to complex fabrication projects'
+    },
+    {
+      icon: Award,
     title: 'Certified welders — CSCS, IPAF',
-    description: 'All our welders hold current industry certifications and undergo regular skills assessments'
-  },
-  {
-    icon: Users,
-    title: 'Fully equipped mobile welding units',
-    description: 'State-of-the-art mobile workshops with all welding processes and equipment on board'
-  }
-];
+      description: 'All our welders hold current industry certifications and undergo regular skills assessments'
+    },
+    {
+      icon: Users,
+      title: 'Fully equipped mobile welding units',
+      description: 'State-of-the-art mobile workshops with all welding processes and equipment on board'
+    }
+  ];
 
 const logos = [
   TarmacLogo,
@@ -94,7 +94,7 @@ const About: React.FC = () => {
                   />
                 );
               })}
-            </div>
+              </div>
           </div>
         </div>
       </div>

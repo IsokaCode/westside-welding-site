@@ -36,9 +36,29 @@ const QuoteForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Formspree will handle the submission automatically
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
+    
+    // Get the form element
+    const form = e.currentTarget as HTMLFormElement;
+    
+    // Submit the form to Formspree
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        setIsSubmitted(true);
+        setTimeout(() => setIsSubmitted(false), 3000);
+      } else {
+        console.error('Form submission failed');
+      }
+    })
+    .catch(error => {
+      console.error('Error submitting form:', error);
+    });
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -143,7 +163,7 @@ const QuoteForm: React.FC = () => {
               {/* Quote Form */}
               <div className="lg:col-span-2">
                 <form 
-                  action="https://formspree.io/f/xpzgwqkz" 
+                  action="https://formspree.io/f/xblkvave" 
                   method="POST"
                   onSubmit={handleSubmit} 
                   className="bg-gray-800/50 border border-gray-700/50 rounded-xl p-8 shadow-2xl"

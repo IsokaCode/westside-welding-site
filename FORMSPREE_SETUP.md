@@ -151,7 +151,7 @@ Every time someone submits the booking form, you'll get an email with:
 ## ✅ **What's Already Done**
 
 The booking form is fully configured with:
-- ✅ Formspree endpoint: `https://formspree.io/f/xpzgwqkz`
+- ✅ Formspree endpoint: `https://formspree.io/f/xblkvave`
 - ✅ All form fields properly named
 - ✅ File upload support
 - ✅ Mobile-responsive design

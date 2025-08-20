@@ -47,8 +47,8 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen bg-white">
-        <Header />
+    <div className="min-h-screen bg-white">
+      <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -58,9 +58,9 @@ function App() {
           <Route path="/booking" element={<QuoteForm />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        <Footer />
-        <MobileSticky />
-      </div>
+      <Footer />
+      <MobileSticky />
+    </div>
     </Router>
   );
 }

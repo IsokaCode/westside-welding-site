@@ -47,7 +47,7 @@ const Testimonials: React.FC = () => {
                 <span>Leave a Review</span>
               </a>
             </div>
-          </div>
+            </div>
 
           {/* Trust Indicators */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
@@ -58,7 +58,7 @@ const Testimonials: React.FC = () => {
               <h3 className="text-xl font-bold text-white mb-2">5-Star Rated</h3>
               <p className="text-gray-300">Consistently rated 5 stars by our customers</p>
             </div>
-            
+
             <div className="bg-gray-800/50 border border-gray-700/50 rounded-xl p-6 text-center">
               <div className="bg-gradient-to-r from-green-500 to-green-400 p-3 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <div className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center">
@@ -68,7 +68,7 @@ const Testimonials: React.FC = () => {
               <h3 className="text-xl font-bold text-white mb-2">Verified Reviews</h3>
               <p className="text-gray-300">All reviews are verified by Google</p>
             </div>
-            
+
             <div className="bg-gray-800/50 border border-gray-700/50 rounded-xl p-6 text-center">
               <div className="bg-gradient-to-r from-blue-500 to-blue-400 p-3 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <span className="text-white font-bold text-sm">24/7</span>
